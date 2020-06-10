@@ -72,9 +72,10 @@
         // update the posiion attributes
         target.setAttribute("data-x", x);
         target.setAttribute("data-y", y);
-        x = Math.round(parseFloat(x) * 0.2645833333);
-        y = Math.round(parseFloat(y) * 0.2645833333);
-      
+        console.log('Real :', Math.round((parseFloat(y)) * 0.2645833333));
+        x = Math.round((parseFloat(x)) * 0.2645833333);
+        y = Math.round((parseFloat(y)) * 0.2645833333);
+        
         document.querySelector("#ket").innerHTML = 'x='+x+'&y='+y;
       }
       //
